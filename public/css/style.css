@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face { 
+    font-family: 'Yekan'; 
+    src: url('../fonts/yekan.eot?#') format('eot'), /* IE6–8 */ 
+         url('../fonts/yekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ 
+         url('../fonts/yekan.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */ 
+}
+* { margin: 0 auto; padding: 0; border: 0; }
+body { background: url(../img/bg.png) repeat center; }
+:focus { outline: none; }
+.top_bg { background: url(../img/bg_top.png) no-repeat center; top: 0; left: 0; right: 0; width: 470px; height: 112px; position: absolute; }
+header { width: 950px; margin: 0 auto; }
+.logo { background: url(../img/logo.png) no-repeat center; float: right; width: 34%; height: 141px; background-size: 100%; }
+.left_header { width: 66%; float: left; overflow: hidden; margin-top: 40px; }
+    .left_header .fa { background: #7182cd; width: 25px; height: 25px; float: left; border-radius: 3px; text-decoration: none; color: #fff; line-height: 25px; text-align: center; font-family: Tahoma; font-size: 12px; }
+    .left_header .en { background: #c9af37; width: 25px; height: 25px; float: left; margin-left: 10px; border-radius: 3px; text-decoration: none; color: #fff; line-height: 25px; text-align: center; font-family: Tahoma; font-size: 12px; }
+    .left_header p { font-family: Yekan; font-size: 18px; display: block; clear: both; line-height: 40px; }
+    .left_header input[type="text"] { background: #eae9e9; width: 150px; height: 33px; border-radius: 5px; font-family: Yekan; font-size: 12.9px; color: #909b9f; text-align: right; padding: 0 2%; float: left; }
+    .left_header input[type="submit"] { background: #888282; background-image: url(../img/search.png); width: 33px; height: 33px; border-radius: 5px; float: left; cursor: pointer; margin-left: 7px; }
+    .left_header button { background: #f1e5ad; width: 108px; height: 33px; border-radius: 5px; float: left; margin-left: 7px; font-family: Yekan; font-size: 12.9px; cursor: pointer; }
+nav { width: 950px; height: 54px; background: #888282; border-radius: 5px; float: right; overflow: hidden; margin-top: 5px; }
+    nav ul { list-style: none; }
+        nav ul li { float: right; color: #fff; }
+            nav ul li a { font-family: yekan; font-size: 18px; color: #fff; text-decoration: none; line-height: 54px; margin: 0 20px; }
+            nav ul li:not(:last-child)::before { content: "|"; }
+.wrapper { width: 950px; margin: 0 auto; }
+    .wrapper .sidebar { width: 200px; float: right; overflow: hidden; }
+    .wrapper .content { width: 722px; float: left; overflow: hidden; margin: 15px auto; }
+    .wrapper .sidebar .title { width: 100%; background: #888282; float: right; border-radius: 5px; margin: 15px 0 0; }
+        .wrapper .sidebar .title h1 { font-family: yekan; font-size: 18px; color: #fff; text-align: right; line-height: 45px; font-weight: normal; padding-right: 20px; }
+    .wrapper .sidebar ul { list-style: none; margin-top: 15px; float: right; }
+        .wrapper .sidebar ul li { background: #acabab; width: 100%; border-radius: 5px; float: right; margin-bottom: 5px; }
+            .wrapper .sidebar ul li a { font-family: yekan; font-size: 12.9px; text-decoration: none; color: #fff; line-height: 28px; text-align: right; padding-right: 15px; float: right; display:block; }
+            .wrapper .sidebar ul li ul { position: absolute; margin-left: -130px; padding-bottom:5px; z-index: 1000; background: #fff; margin-top: 0px; border-radius: 5px 5px 5px 5px; border: 1px solid #888282; width:165px; }
+                .wrapper .sidebar ul li ul li { background: #acabab; margin: 5px 5px 0px; width: 94%; }
+                .wrapper .sidebar ul li ul li a { color: #fff; display:block; }
+    .wrapper .sidebar .statistic { list-style: none; margin-top: 8px; float: right; }
+        .wrapper .sidebar .statistic li { background: #acabab; width: 100%; border-radius: 5px; float: right; margin-bottom: 1px; }
+            .wrapper .sidebar .statistic li a { font-family: yekan; font-size: 12.9px; text-decoration: none; color: #000; line-height: 25px; text-align: right; padding-right: 15px; float: right; }
+    .wrapper .content .slider { float: none; clear: both; }
+    .wrapper .content .right { width: 560px; float: right; overflow: hidden; margin: 0 auto; }
+        .wrapper .content .right .content { background: #eaeaea; width: 100%; height: 330px; overflow: hidden; float: right; border-radius: 5px; }
+            .wrapper .content .right .content .right { background: #888282; width: 50%; float: right; overflow: hidden; cursor: pointer; box-shadow: #666 -1px -1px 3px inset; border-bottom: 1px solid #c5c5c5; }
+            .wrapper .content .right .content h1 { font-family: Yekan; font-size: 18px; color: #fff; font-weight: normal; line-height: 50px; text-align: center; }
+            .wrapper .content .right .content .left { background: #888282; width: 50%; float: right; overflow: hidden; cursor: pointer; box-shadow: #666 -1px -1px 3px inset; border-bottom: 1px solid #c5c5c5; }
+            .wrapper .content .right .content .active { background: #eaeaea; width: 50%; float: right; overflow: hidden; cursor: pointer; box-shadow: none; }
+                .wrapper .content .right .content .active h1 { color: #000; }
+            .wrapper .content .right .content .news1 { width: 90%; margin: 0 auto; float: none; display: block; }
+            .wrapper .content .right .content .news2 { width: 90%; margin: 0 auto; float: none; display: none; }
+            .wrapper .content .right .content .news { float: right; width: 100%; border-bottom: 1px solid #c5c5c5; padding-bottom: 10px; }
+                .wrapper .content .right .content .news h1 { font-family: yekan; font-size: 18px; color: #000; text-align: right; }
+                .wrapper .content .right .content .news p { font-family: yekan; font-size: 12.9px; color: #888282; text-align: right; }
+                .wrapper .content .right .content .news a { position: absolute; margin-left: 0px; margin-top: -13px; font-family: yekan; font-size: 12.9px; text-decoration: none; color: #fff; background: #888282; padding: 2px 8px; }
+    .wrapper .content .left { width: 150px; float: left; overflow: hidden; margin: 0 auto; }
+        .wrapper .content .left .title { background: #888282; width: 100%; border-radius: 5px; float: right; margin-top: 15px; }
+            .wrapper .content .left .title h1 { font-family: yekan; font-size: 18px; color: #fff; text-align: right; line-height: 45px; font-weight: normal; padding-right: 20px; }
+        .wrapper .content .left .content { width: 100%; float: right; overflow: hidden; background: #eaeaea; border-radius: 5px; padding-bottom: 10px; }
+            .wrapper .content .left .content p { font-family: Yekan; font-size: 12px; color: #000; text-align: right; padding: 10px 10px 10px 0px; }
+            .wrapper .content .left .content span { font-family: Yekan; font-size: 12px; color: #7182cd; text-align: right; float: right; clear: left; display: block; line-height: 21px; }
+            .wrapper .content .left .content input[type="radio"] { float: right; clear: right; margin: 5px 9px; }
+            .wrapper .content .left .content input[type="submit"] { float: right; clear: both; margin: 5px 10px 0; width: 50%; font-family: yekan; font-size: 12.9px; background: #888282; color: #fff; border-radius: 3px; cursor: pointer; }
+
+@media (max-width:950px) {
+    header { width: 100%; }
+}
